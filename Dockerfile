@@ -12,6 +12,5 @@ COPY . .
 
 EXPOSE 80
 
-# ENV PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION python
 
 CMD ["uvicorn", "app.main:app","--host", "0.0.0.0", "--reload", "--reload-dir", "app", "--port", "80"]

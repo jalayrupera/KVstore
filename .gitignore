@@ -161,3 +161,4 @@ cython_debug/
 
 default.etcd
 venv
+k8-files
