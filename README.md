@@ -1,7 +1,7 @@
 
 # KVstore
 
-A Key-Value storage server using FastAPI, etcd and Kubernetes.
+A key-value storage server built with FastAPI, etcd, and Kubernetes.
 
 
 
