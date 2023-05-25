@@ -2,3 +2,7 @@ default.etcd
 venv
 .gitignore
 venv.sh
+master-backend.yaml
+master-etcd.yaml
+script.py
+k8-files
