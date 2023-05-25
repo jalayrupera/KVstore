@@ -163,3 +163,4 @@ default.etcd
 venv
 k8-files
 script.py
+.DS_Store
