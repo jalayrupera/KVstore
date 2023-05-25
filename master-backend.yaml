@@ -27,11 +27,9 @@ spec:
       containers:
         - name: backend
           image: jalayrupera13/kvstore-app:latest
-          env:
-          - name: ETCD_HOST
-            value: "etcd"
-          - name: ETCD_PORT
-            value: "2379"
+          envFrom:
+          - secretRef:
+              name: etcd-secret
           imagePullPolicy: Always
           resources:
             limits:
