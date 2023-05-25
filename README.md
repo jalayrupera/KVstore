@@ -35,6 +35,8 @@ Screenshot of env file
 
     ```bash
       source venv.sh
+      deactivate
+      source venv/bin/activate
       export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
       uvicorn app.main:app --reload --reload-dir app --port 8000
     ``` 
