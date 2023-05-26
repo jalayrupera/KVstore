@@ -32,7 +32,7 @@ Screenshot of env file
       etcd
     ```
     2. In another terminal run following commands
-    set ETCD_HOST=localhost, ETCD_PORT=2379 in .env file
+     and set ETCD_HOST=localhost, ETCD_PORT=2379 in .env file
 
     ```bash
       source venv.sh
