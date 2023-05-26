@@ -1,7 +1,7 @@
 
 # KVstore
 
-A Key-Value storage server using FastAPI, etcd and Kubernetes.
+A key-value storage server built with FastAPI, etcd, and Kubernetes.
 
 
 
@@ -20,12 +20,13 @@ A Key-Value storage server using FastAPI, etcd and Kubernetes.
 
 ## Installation
 
-Create .env file outside app folder. The env should contain field ETCD_HOST, ETCD_PORT.
+Create .env file outside app folder. The env should contain field ETCD_HOST, ETCD_PORT.  
 Screenshot of env file
+&nbsp;
 ![picture alt](images/env.png)
 
 
-- Local Installation and run app
+- **Local Installation**
     1. In one terminal run command
     ```bash
       etcd
@@ -40,8 +41,20 @@ Screenshot of env file
       export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
       uvicorn app.main:app --reload --reload-dir app --port 8000
     ``` 
-
-- Kubernetes Deployments and services
+    &nbsp;
+- **Installation with Docker Compose**
+    1. In order to run the app on docker container configure the .env file with below host and port values
+    ```bash
+      ETCD_HOST=etcd
+      ETCD_PORT=2379
+    ```
+    2. Run the below command to create app and etcd containers
+    ```bash
+      docker-compose up
+    ```
+    3. Visit the localhost:8000/docs to access the API.
+    &nbsp;
+- **Kubernetes Deployments, services and Installation**
     1. Run below command to start minikube, minikube dashboard and metrics-server
     ```bash
       minikube start
